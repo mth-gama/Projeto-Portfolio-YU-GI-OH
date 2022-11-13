@@ -34,21 +34,52 @@ main{
     display: flex;
 }
 
-.foto-perfil {
-    margin-right: 40px;
-}
 
-.container-contato img{
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20rem;
     height: 20rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: solid 10px #2739DC;
+    overflow: hidden;
 }
 
-/* .contato-infos {
+.wrap img{
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 400ms;
+}
 
-} */
+.wrap:hover img{
+    transform: scale(1.2);
+}
+
+.circle{
+    background-color: #961F5D;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 7s linear infinite;
+}
+
+@keyframes morph{
+    0%, 100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+
+    34%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    67%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+
 
 .infos{
     padding-top: 37px;
@@ -84,6 +115,7 @@ main{
 ul {
     position: relative;
     display: flex;
+    
 }
 ul li {
     position: relative;
@@ -95,7 +127,7 @@ ul li a {
     text-decoration: none;
 }
 ul li a .fa-brands {
-    font-size: 3.8rem;
+    font-size: 3.7rem;
     color: rgba(212, 212, 212, 0.099);
 }
 ul li a::before {
@@ -171,53 +203,16 @@ ul li:hover a::before {
     margin-bottom: 10px;
 }
 
-.legenda{
-    font-family: var(--font-card);
-    text-transform: uppercase;
+ul .fa-legenda{
+    font-size: 1.3rem;
     color: #fff;
-    margin: 1.8rem;
+    font-family: var(--font-secundary);
+}
+
+.legenda p{
+    font-family: var(--font-secundary);
+    color: #fff;
     font-size: 1.5rem;
-}
-
-.legenda p {
-    margin-bottom: .5rem;
-}
-
-.container-legenda{
-    display: flex;
-}
-
-.container-legenda{
-    display: flex;
-    align-items: center;
-}
-
-
-.linguagens{
-    width: 20px;
-    height: 20px;
-    background-color: #487C8E;
-    border-radius: 50%;
-}
-
-.ferramentas{
-    width: 20px;
-    height: 20px;
-    background-color: #008A77;
-    border-radius: 50%;
-}
-
-.designe{
-    width: 20px;
-    height: 20px;
-    background-color: #CE723C;
-    border-radius: 50%;
-}
-
-.texto{
-    font-size: 1rem;
-    margin-bottom: 0;
-    margin: 1rem;
 }
 
 .container-sobre-mim p{
@@ -349,3 +344,15 @@ ul li:hover a::before {
     justify-content: center;
     flex-direction: column;
 }
+
+.card-formacao{
+    background-image: url('img/carta_frente1.png');
+    background-size: cover;   
+    width: 200px;
+    height: 291px;
+}
+
+.formacao01 {
+    display: flex;
+}
+
