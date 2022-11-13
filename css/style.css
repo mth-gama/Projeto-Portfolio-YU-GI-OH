@@ -1,0 +1,301 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins&family=VT323&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --font-primary: "Julius Sans One", serif;
+    --font-card: "handel-gothic,Helvetica,Arial,sans-serif", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Mulish", serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212123;
+    margin-top: 7rem;
+}
+
+main{
+    width: 55rem;
+}
+
+.container-contato{
+    display: flex;
+}
+
+.foto-perfil {
+    margin-right: 40px;
+}
+
+.container-contato img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 10px #2739DC;
+}
+
+/* .contato-infos {
+
+} */
+
+.infos{
+    padding-top: 37px;
+}
+
+.infos h1, h2{
+    font-family:var(--font-primary);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    color: #fff; 
+}
+
+.contato i{
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+.redes-sociais{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.redes-sociais .linkedin{
+    color: #0076B2;
+    font-size: 70px;
+    padding-right: 60px;
+}
+
+.redes-sociais .github{
+    color: #fff;
+    font-size: 70px;
+    padding-right: 60px;
+}
+
+.redes-sociais .twitter{
+    color: #34B1CC;
+    font-size: 70px;
+    padding-right: 60px;
+}
+
+.redes-sociais .instagram{
+    color: #B2389D;
+    font-size: 70px;
+}
+
+.container-sobre-mim {
+    width: 100%;
+    padding-top: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.title-section{
+    font-family: var(--font-primary);
+    color: #E0D77A;
+}
+
+.row{
+    width: 100%;
+    height: 1px;
+    background-color: #E0D77A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.legenda{
+    font-family: var(--font-card);
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.legenda p {
+    margin-bottom: .5rem;
+}
+
+.container-legenda{
+    display: flex;
+}
+
+.container-legenda{
+    display: flex;
+    align-items: center;
+}
+
+
+.linguagens{
+    width: 20px;
+    height: 20px;
+    background-color: #487C8E;
+    border-radius: 50%;
+}
+
+.ferramentas{
+    width: 20px;
+    height: 20px;
+    background-color: #008A77;
+    border-radius: 50%;
+}
+
+.designe{
+    width: 20px;
+    height: 20px;
+    background-color: #CE723C;
+    border-radius: 50%;
+}
+
+.texto{
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin: 1rem;
+}
+
+.container-sobre-mim p{
+    font-family: var(--font-primary);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.card__giratorio {
+    background-color: transparent;
+    width: 245px;
+    height: 356px;
+    perspective: 1000px;
+    margin: 1rem;
+}
+
+.card__giratorio-conteudo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.container-top {
+    border-radius: 5px;
+    background-image: url('img/carta_frente2.png');
+    background-size: cover;   
+    width: 100%; 
+    height: 356px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.caixa-titulo {
+    text-align: left;
+}
+
+.caixa-titulo h1 {
+    font-family: var(--font-card);
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-left: 30px;
+    margin-top: 17px;
+}
+
+.icons_stars {
+    margin-left: 100px;
+    margin-bottom: 32px;
+    margin-top: 4px;
+}
+
+.img_icon{
+    font-size: 7rem;
+    color: #fff;
+}
+.img_icon i{
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 5px #000;
+}
+
+.texto-descricao{
+    text-align: left;
+    height: 5rem;
+    width: 15.5rem;
+    margin-left: 25px;
+    margin-top: 33px;
+    overflow-y: scroll;
+}
+.texto-descricao h4{
+    font-family: var(--font-card);
+    
+}
+.card__giratorio:hover .card__giratorio-conteudo {
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--frente,
+.card__giratorio-conteudo--traseira {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+    top: 0;
+}
+
+.card__giratorio-conteudo--frente {
+    background: #3C3B3F;
+    border-radius: 5px;
+}
+
+.card__giratorio-conteudo--traseira {
+    background: linear-gradient(229deg, #0093E9, #80D0C7);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p {
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__giratorio-conteudo--traseira h1 {
+    font-size: 1.7rem;
+}
+
+.img_traseira {
+    width: 100%;
+    height: 100%;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    width: 100%; ;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
