@@ -75,32 +75,82 @@ main{
 }
 
 .redes-sociais{
+    position: relative;
+    display: flex;
     width: 100%;
     padding-top: 30px;
 }
 
-.redes-sociais .linkedin{
-    color: #0076B2;
-    font-size: 70px;
-    padding-right: 60px;
+ul {
+    position: relative;
+    display: flex;
+}
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+ul li a {
+    text-decoration: none;
+}
+ul li a .fa-brands {
+    font-size: 3.8rem;
+    color: rgba(212, 212, 212, 0.099);
+}
+ul li a::before {
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3.8rem;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
 }
 
-.redes-sociais .github{
-    color: #fff;
-    font-size: 70px;
-    padding-right: 60px;
+ul li:nth-child(1) a::before {
+    content: "\f09b";
+    background-image: linear-gradient(45deg, 
+    #E0D77A 0%,#a19a4b 25%,#716c36 50%,#4d4925 75%,
+    #4d4925 100%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #E0D77A;
+}
+ul li:nth-child(2) a::before {
+    content: "\f08c";
+    background-image: linear-gradient(45deg, 
+    #E0D77A 0%,#a19a4b 25%,#716c36 50%,#4d4925 75%,
+    #4d4925 100%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #E0D77A;
+}
+ul li:nth-child(3) a::before {
+    content: "\f16d";
+    background-image: linear-gradient(45deg, 
+    #E0D77A 0%,#a19a4b 25%,#716c36 50%,#4d4925 75%,
+    #4d4925 100%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #E0D77A;
 }
 
-.redes-sociais .twitter{
-    color: #34B1CC;
-    font-size: 70px;
-    padding-right: 60px;
+ul li:nth-child(4) a::before {
+    content: "\f099";
+    background-image: linear-gradient(45deg, 
+    #E0D77A 0%,#a19a4b 25%,#716c36 50%,#4d4925 75%,
+    #4d4925 100%);
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #E0D77A;
 }
 
-.redes-sociais .instagram{
-    color: #B2389D;
-    font-size: 70px;
+ul li:hover a::before {
+    height: 100%;
 }
+
 
 .container-sobre-mim {
     width: 100%;
