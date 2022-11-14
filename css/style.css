@@ -215,8 +215,20 @@ ul li:hover a::before {
 
 ul .fa-legenda {
     font-size: 1.3rem;
-    color: #fff;
-    font-family: var(--font-secundary);
+    font-family: var(--font-secundary);   
+}
+
+ul .fa-legenda.linguagens{
+    color: #6D8EA1;
+    list-style: none;
+    border-bottom: solid 2px #6D8EA1;
+}
+
+ul .fa-legenda.ferramentas{
+    color: #008F7D;
+    list-style: none;
+    border-bottom: solid 2px #008F7D;
+
 }
 
 .legenda p {
@@ -224,6 +236,7 @@ ul .fa-legenda {
     color: #fff;
     font-size: 1.5rem;
 }
+
 
 .container-sobre-mim p {
     font-family: var(--font-primary);
